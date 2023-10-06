@@ -98,6 +98,8 @@ if user_menu == "Winning Percentage":
             st.error("Current score must be less than target")
         elif overs < 15:
             st.error("Overs done cannot be less than 15.")
+        elif wickets > 10:
+            st.error("wickets out cannot be more than 10")   
 
         else:
             runs_left = target - score
